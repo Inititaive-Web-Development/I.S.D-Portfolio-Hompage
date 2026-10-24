@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* --HEADER DESIGN START-- */
+
+header {
+    background-color: rgb(9, 25, 47);
+    min-height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.siteNav nav {
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 10px 10px 0;
+}
+
+.siteNav a {
+    text-decoration: none;
+    color: white;
+}
+
+.siteNav a:visited {
+    color: rgb(2, 193, 193)
+}
+
+.siteNav a:hover {
+    color: rgb(137, 141, 146);
+}
+
+.siteNav a:active {
+    color: rgb(182, 2, 182);
+}
+
+/*--HEADER DESIGN END--*/
+/*--ABOUT DESIGN START--*/
+
+main {
+    background: rgb(9, 25, 47);
+    min-height: 100vh;
+}
+
+#about {
+    position: relative;
+    text-align: left;
+    padding-left: 200px;
+    padding-top: 100px;
+    padding-bottom: 90px;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+
+}
+
+.aboutText {
+    border: 1px solid rgb(75, 102, 130);
+    border-radius: 10px;
+    width: fit-content;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(15, 38, 65);
+}
+
+
+#about .about-description,
+#about h2 {
+    color: rgb(202, 207, 215)
+}
+
+#about .about-description {
+    max-width: 36rem;
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+/*--ABOUT DESIGN END--*/
+/*--SKILLS DESIGN START--*/
+
+#skills {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem 4rem;
+    font-family: Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#skills h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#skills .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+#skills .skill-group {
+    padding: 1.25rem;
+    border: 1px solid rgb(75, 102, 130);
+    border-radius: 8px;
+    background-color: rgb(15, 38, 65);
+}
+
+#skills h3 {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+#skills ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5rem;
+    list-style: none;
+}
+
+#skills li {
+    display: grid;
+    min-height: 3rem;
+    place-items: center;
+    padding: 0.5rem;
+    border-radius: 4px;
+    background-color: rgb(9, 25, 47);
+    text-align: center;
+}
+
+@media (max-width: 640px) {
+    #skills .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*--SKILLS DESIGN END--*/
+/*--EDUCATION DESIGN START--*/
+
+#education {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem 4rem;
+    font-family: Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#education h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#education .education-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+#education .education-group {
+    padding: 1.25rem;
+    border: 1px solid rgb(75, 102, 130);
+    border-radius: 8px;
+    background-color: rgb(15, 38, 65);
+}
+
+#education h3 {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+#education ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5rem;
+    list-style: none;
+}
+
+#education li {
+    display: grid;
+    min-height: 3rem;
+    place-items: center;
+    padding: 0.5rem;
+    border-radius: 4px;
+    background-color: rgb(9, 25, 47);
+    text-align: center;
+}
+
+@media (max-width: 640px) {
+    #education .education-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*--EDUCATION DESIGN END--*/
+/*--CONTACT/FOOTER DESIGN START--*/
+
+#contact {
+    background-color: rgb(75, 102, 130);
+    padding-top: 20px;
+}
+
+#contact sub {
+    position: relative;
+    display: block;
+    text-align: center;
+    color:rgb(255, 255, 255);
+}
+
+#contact a {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+#contact a:visited {
+    color: rgb(2, 193, 193)
+}
+
+#contact a:hover {
+    color: rgb(137, 141, 146);
+}
+
+#contact a:active {
+    color: rgb(182, 2, 182);
+}
+
+#contact a + a {
+    margin-left: 1rem;
+}
+
+/*--CONTACT/FOOTER DESIGN END--*/
+/*--PROJECT BUTTON DESIGN START--*/
+
+.projectButton {
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+.projectButton a:hover {
+    color: rgb(137, 141, 146);
+}
+
+.projectButton a:active {
+    color: rgb(182, 2, 182);
+    transform: translate(-2px, 2px) scale(0.96);
+    box-shadow: 0 0 0 rgba(75, 102, 130, 0);
+}
+
+.projectButton a {
+    display: inline-block;
+    color:rgb(255, 255, 255);
+    text-transform: capitalize;
+    text-decoration: none;
+    border: 1px solid rgb(75, 102, 130);
+    border-radius: 10px;
+    background-color: rgb(75, 102, 130);
+    padding: 10px;
+    box-shadow: 0 6px 10px rgba(75, 102, 130, 0.65);
+    transition: transform 120ms ease, box-shadow 120ms ease;
+}
